@@ -186,6 +186,7 @@ public class WebAppLocalServer extends CordovaPlugin implements AssetBundleManag
 
         configuration.setAppId(currentAssetBundle.getAppId());
         configuration.setRootUrlString(currentAssetBundle.getRootUrlString());
+        Log.w(LOG_TAG, "Loading RootUrlString from preferences: " + currentAssetBundle.getRootUrlString());
         configuration.setCordovaCompatibilityVersion(currentAssetBundle.getCordovaCompatibilityVersion());
 
         if (switchedToNewVersion) {

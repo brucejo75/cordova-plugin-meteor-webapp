@@ -218,6 +218,7 @@ class AssetBundle {
         try {
             String string = stringFromUri(uri);
             Matcher matcher = runtimeConfigPattern.matcher(string);
+            Log.w(LOG_TAG, "Reading runtime Config")
             if (!matcher.find()) {
                 Log.e(LOG_TAG, "Could not find runtime config in index file");
                 return null;
